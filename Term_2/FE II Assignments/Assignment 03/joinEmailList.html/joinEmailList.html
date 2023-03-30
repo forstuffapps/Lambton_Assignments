@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Join Our Email List</title>
+		<script>
+			// the $ function
+			var $ = function(id){
+				return document.getElementById(id);
+			};
+			
+			// an event handler for the click event of the button
+			var joinList = function(){
+				alert("The joinlist function has been run.");
+			};
+			
+			// an event handler for the change event of the textbox
+			var changeValue = function() {
+				alert("The value in the textbox has changed.");
+			};
+			
+			// event handler for the load event, that attached to event handlers
+			window.onload = function() {
+				$("join_list").onclick = joinList;
+				$("email_address").onchange = changeValue;
+			};
+			
+		</script>
+	</head>
+	<body>
+		<main>
+			<h1>Please Join Our Email List</h1>
+			<label for="email_address">Email Address:</label>
+			<input type="text" id="email_address" name="email_address"></input><br>
+			<label>&nbsp;</label>
+			<input type="button" id="join_list" value="Join our List"></input>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">	
+    <title>Calculate MPG</title>
+    <link rel="stylesheet" href="mpg.css">
+    <script>
+        "use strict";
+        var $ = function(id) {
+            return document.getElementById(id);
+        };
+        var calculateMpg = function(miles, gallons) {
+			var mpg = (miles / gallons);
+			mpg = mpg.toFixed(1);
+			return mpg;
+		};
+		var processEntries = function() {
+            var miles = parseFloat($("miles").value);
+            var gallons = parseFloat($("gallons").value);
+
+            if (isNaN(miles) || isNaN(gallons)) {
+                alert("Both entries must be numeric");
+            } else if (miles <= 0 || gallons <= 0) {
+            	alert("Both entries must be greater than zero");
+            } else {
+                $("mpg").value = calculateMpg(miles, gallons);
+            }
+        };
+
+
+        // Defining the Clear_Miles function which clears the data in the textbox Miles Driven:
+        var Clear_Miles = function() 
+        {
+		$("miles").value = "";
+		}
+		
+        // Defining the Clear_Gallons function which clears the data in the textbox Gallons of Gas Used:
+		var Clear_Gallons = function() 
+        {
+		$("gallons").value = "";
+		}
+
+
+		var clearEntries = function() 
+        {
+			$("miles").value = "";
+			$("gallons").value = "";
+			$("mpg").value = "";
+		};
+
+
+
+		window.onload = function() 
+        {
+            $("calculate").onclick = processEntries;
+            $("miles").focus();
+
+            // Clearing all the entries, includes text boxes Miles Driven:, Gallons of Gas Used:, Miles Per Gallon
+            // when the Miles Per Gallon text box is double clicked, trigerring this by calling the pre defined fucntion clearEntries
+			$("mpg").ondblclick = clearEntries;  
+			
+            // Clearing the data in the text box Miles Driven: with the predefined Clear_Miles function 
+            // when the text box is focused
+			$("miles").onfocus = Clear_Miles;
+			
+            // Clearing the data in the text box Gallons of Gas Used: with the predefined Clear_Gallons function 
+            // when the text box is focused
+			$("gallons").onfocus = Clear_Gallons;
+			
+            // Here I have used the onblur, which fires the processEntries method when the focus leaves the gallons
+			$("gallons").onblur = processEntries;
+
+
+        };
+    </script>
+</head>
+<body>
+    <main>
+        <h1>Calculate Miles Per Gallon</h1>
+        <label for="miles">Miles Driven:</label>
+		<input type="text" id="miles"><br>
+        <label for="gallons">Gallons of Gas Used:</label>
+        <input type="text" id="gallons"><br>
+        <label for="mpg">Miles Per Gallon</label>
+        <input type="text" id="mpg"><br>
+        <label>&nbsp;</label>
+        <input type="button" id="calculate" value="Calculate MPG"><br>
+    </main>
+</body>
+</html>

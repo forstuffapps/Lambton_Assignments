@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<script>
+			// calc tax function
+		//  var calculateTax = function ( subtotal, taxRate) {
+			function calculateTax ( subtotal, taxRate) {
+				var tax = subtotal * taxRate;
+				tax = tax.toFixed(2);
+				return tax;
+			};
+			
+			//variables
+			var subT = 85.00;
+			var taxes = 0.05;
+			var salesTax = calculateTax( subT, taxes);
+			
+			// display results
+			alert(salesTax);
+			
+		</script>
+	</head>
+</html>
