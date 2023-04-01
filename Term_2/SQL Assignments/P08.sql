@@ -42,6 +42,8 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('Letter Grade: ' || letter_grade);
 END;
 
+
+
 /* 2 */
 
 CREATE FUNCTION get_numeric_grade (section_id INT, student_number INT)
