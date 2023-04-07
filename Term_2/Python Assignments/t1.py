@@ -41,6 +41,10 @@ def getweather(city):
 		print("NO Content Found")
 
 
+    
+
+
+
 # explicit function to
 # search city
 def search():
@@ -77,6 +81,10 @@ weather_l = Label(app, text="")
 weather_l.pack()
 
 
+temp = Label(app, text=city_text.get())
+
+temp.pack()
+
 def countdown(count):
     if count==0 and city_entry==True:
         search()
@@ -88,13 +96,15 @@ def countdown(count):
 timer = Label(app,text="")
 timer.pack()
 timer.place(x=125, y=125)
-def qwe():
-    print(True)
-    app.after(3000,qwe)
-app.after(10000,search)
 
 
 
+def update_weather():
+    search()
+    app.after(5000, update_weather)
+
+
+#update_weather()
 
 
 app.mainloop()
