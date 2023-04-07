@@ -2,6 +2,13 @@ import requests
 import json
 import time
 import sys
+from datetime import *
+import time
+from PIL import ImageTk, Image
+import os
+from io import BytesIO
+from urllib.request import urlopen
+
 
 # import required modules
 from configparser import ConfigParser
@@ -30,9 +37,11 @@ def getweather(city):
 		country = json['sys']
 		temp_kelvin = json['main']['temp']
 		temp_celsius = temp_kelvin-273.15
+		temp_fah = ((9*temp_celsius)/5)+32
 		weather1 = json['weather'][0]['main']
+		img_id = json['weather'][0]['icon']
 		final = [city, country, temp_kelvin,
-				temp_celsius, weather1]
+				temp_celsius,temp_fah,  weather1,img_id]
 		return final
 	else:
 		print("NO Content Found")
@@ -51,8 +60,14 @@ def search():
 	weather = getweather(city)
 	if weather:
 		location_lbl['text'] = '{}'.format(weather[0],)
-		temperature_label['text'] = str(weather[3])+" Degree Celsius"
-		weather_l['text'] = weather[4]
+		temperature_label['text'] = str(weather[3])+" Degree Celsius,   \n" + str(weather[4])+" Degree Farenheit" 
+		weather_l['text'] = weather[5]
+		
+		img_loc = str(weather[6])+'.png'
+		print(img_loc)
+		#display_img(img_loc)
+		#print('qwe' + img_loc)
+		
 	else:
 		messagebox.showerror('Error', "Cannot find {}".format(city))
 
@@ -80,23 +95,54 @@ weather_l = Label(app, text="")
 weather_l.pack()
 
 
+'''
+frame = Frame(app, width=6, height=4)
+frame.pack()
+frame.place(anchor='center', relx=0.5, rely=0.5)
+img = ImageTk.PhotoImage(Image.open("images/10d.png"))
+img_label = Label(frame, image = img)
+img_label.pack()
+'''
+
+def display_img(img_loc):
+	qq = os.path.abspath(__file__)
+	qq=qq.split("\\")[0:-1]
+	qq='/'.join(qq) + '/images/'
+	print(qq+img_loc)
+	photo = PhotoImage(file=qq+img_loc)
+	varun_label['image']=photo
+
+
+img_url = "https://openweathermap.org/img/wn/01d@2x.png"
+u = urlopen(img_url)
+raw_data = u.read()
+u.close()
+
+img = ImageTk.PhotoImage(data=raw_data)
+panel = Label(app, image=img)
+panel.image = img
+panel.pack()
+
+q=str(datetime.now()).split()
+date_time = Label(app, text=q[0]+'\n'+datetime.now().strftime("%H:%M:%S"))
+date_time.pack()
+def date_n_time():
+	date_time['text']=q[0]+'\n'+datetime.now().strftime("%H:%M:%S")
+	app.after(1000,date_n_time)
+
+app.after(1000,date_n_time)
+
 temp = Label(app, text=city_text.get())
 
 temp.pack()
-
-def countdown(count):
-	if count==0 and city_entry==True:
-		search()
-		app.after(1000, countdown(3))
-	else:
-		timer["text"]=count
-		app.after(1000,countdown(count-1))
 		
 timer = Label(app,text="")
 timer.pack()
-timer.place(x=125, y=125)
+#timer.place(x=125, y=125)
 
 def ti(t):
+	#q=str(datetime.now()).split()
+	#date_time['text']=q[0]+'\n'+q[1]
 	if t>0:
 		timer["text"]=t
 		app.after(1000, ti, t-1)
