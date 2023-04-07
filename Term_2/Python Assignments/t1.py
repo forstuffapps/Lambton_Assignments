@@ -41,13 +41,15 @@ def getweather(city):
 		print("NO Content Found")
 
 
-    
+	
 
-
+flag = False
 
 # explicit function to
 # search city
 def search():
+	global flag
+	flag = True
 	city = city_text.get()
 	weather = getweather(city)
 	if weather:
@@ -86,54 +88,37 @@ temp = Label(app, text=city_text.get())
 temp.pack()
 
 def countdown(count):
-    if count==0 and city_entry==True:
-        search()
-        app.after(1000, countdown(3))
-    else:
-        timer["text"]=count
-        app.after(1000,countdown(count-1))
-        
+	if count==0 and city_entry==True:
+		search()
+		app.after(1000, countdown(3))
+	else:
+		timer["text"]=count
+		app.after(1000,countdown(count-1))
+		
 timer = Label(app,text="")
 timer.pack()
 timer.place(x=125, y=125)
 
+def ti(t):
+	if t>0:
+		timer["text"]=t
+		app.after(1000, ti, t-1)
+
 
 
 def update_weather():
-    search()
-    app.after(5000, update_weather)
+	global flag
+	if flag:
+		print('qwe')
+		search()
+		ti(5)
+	app.after(5000, update_weather)
 
 
-#update_weather()
 
+
+update_weather()
+print(flag)
 
 app.mainloop()
-    
-
-
-
-
-'''
-for i in range(5):
-    for i in range(5):
-        timer = Label(app)
-        #timer["text"] = i+1
-        timer.place(x=35, y=15)
-        app,after()
-        time.sleep(1)
-'''
-
-    
-
-
-
-
-
-'''
-response = requests.get("http://api.openweathermap.org/data/2.5/weather?q=Sarnia,ON,CA&appid=6f1b6f13e6b4aa1ac4740f3488928fe3")
-print(response.json()['weather']['main'])
-
-
-with open('person.txt', 'w') as json_file:
-  json.dump(response.json(), json_file)
-  '''
+	
