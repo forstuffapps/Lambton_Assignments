@@ -1,0 +1,35 @@
+@import url("../style.css");
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.team-member {
+  flex-basis: 25%;
+  margin: 1em;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 1em;
+}
+
+.team-member h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.team-member h3 {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.team-member p {
+  font-size: 1em;
+  line-height: 1.4;
+}

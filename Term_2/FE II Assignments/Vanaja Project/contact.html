@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- This webpage was designed by Vanaja Chowdari Alla, November 09, 2022-->
+<html lang="en">
+
+
+<head>
+  <title>Metalitac Private Limited</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/about.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="reservation.js"></script>
+	<script src="jquery.validate.min.js"></script>
+	<script src="additional-methods.min.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+
+<body>
+  <div class="hero">
+    <nav>
+      <a href="index.html"> 
+  <img src="images/logo.png" class="logo">
+</a> 
+      <ul>
+        <li>
+          <a href="index.html">Home</a>&nbsp; &nbsp;
+        </li>
+        <li>
+          <a href="about.html">About</a>&nbsp; &nbsp;
+        </li>
+        <li>
+          <a href="team.html">Our Team</a>&nbsp; &nbsp;
+        </li>
+        <li>
+          <a href="specials.html">Specials</a>&nbsp; &nbsp;
+        </li>
+        <li>
+          <a href="training.html">Training</a>&nbsp; &nbsp;
+        </li>
+        <li>
+          <a href="media.html">Media</a>&nbsp; &nbsp;
+        </li>
+        <li>
+          <a href="contact.html">Contact Us</a>&nbsp; &nbsp;
+        </li>
+        <li>
+          <select name="sample" onchange="location = this.value;">
+            <option>Reports</option>
+						<option value="Report1.html">Report_1</option>
+						<option value="Report2.html">Report_2</option>
+						<option value="Report3.html">Report_3</option>
+						<option value="Report4.html">Report_4</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- main section starts here, which includes all the content which will display on the page -->
+  <main>
+    <form class="input-fields">
+      <form action="response.html" method="get"
+    	name="reservation_form" id="reservation_form">
+      <div class="grid inputs gap-8">
+        <fieldset class="field-container">
+          <legend class="required">First Name</legend>
+          <input size="20" autofocus type="text" name="name" id="name" required class="input-field" />
+        </fieldset>
+        <fieldset class="field-container">
+          <legend class="required">Last Name</legend>
+          <input type="text"name="name1" id="name1" required class="input-field" />
+        </fieldset>
+        <fieldset class="field-container">
+          <legend class="required">Email</legend>
+          <input type="email" name="email" id="email" required class="input-field" />
+        </fieldset>
+        <fieldset class="field-container">
+          <legend class="required">Phone</legend>
+          <input type="text" name="phone" id="phone" required placeholder="999-999-9999">
+        </fieldset>
+        <fieldset class="field-container">
+          <legend>Date of Birth</legend>
+          <input type="date" name="dob" id="dob" required class="input-field" />
+        </fieldset>
+        <section class="options-container">
+          <span>Gender : </span>
+          <section class="options flex-row">
+            <span class="option">
+              <input type="radio" name="gender" id="male" />
+              <label for="male">Male</label>
+            </span>
+            <span class="option">
+              <input type="radio" name="gender" id="female" />
+              <label for="female">Female</label>
+            </span>
+          </section>
+        </section>
+      </div>
+      <section class="options-container">
+        <span class="text-sm">Get Notified about</span>
+        <section class="col-options flex justify-start">
+          <span class="option">
+            <input type="checkbox" name="gender" id="new" />
+            <label for="new">New Products</label>
+          </span>
+          <span class="option">
+            <input type="checkbox" name="gender" id="marketing" />
+            <label for="marketing">Marketing</label>
+          </span>
+          <span class="option">
+            <input type="checkbox" name="gender" id="discounts" />
+            <label for="discounts">Discounts</label>
+          </span>
+        </section>
+      </section>
+      <select name="reference" id="reference">
+        <caption>
+          Hello
+        </caption>
+        <option value="ad" selected>Referral Source</option>
+        <option value="ad">Advertisement</option>
+        <option value="friend">Friend</option>
+        <option value="google">Google</option>
+        <option value="social">Social Media</option>
+        <option value="other">Other</option>
+      </select>
+      <textarea id="questions" name="questions" draggable="false" class="queries-input" rows="5" cols="30"></textarea>
+      <div class="contacts-btns">
+        <input type="submit" id="submit" value="Submit" class="btn btn-primary" />
+        <!--<input type="submit" id="submit" value="Submit Request"><br>-->
+        <input type="reset" id="reset" value="Reset Form" class="btn btn-secondary" />
+      </div>
+    </form>
+  </main>
+  <!-- main ends-->
+
+  <!-- footer section which includes the contact link -->
+  <footer>
+    &copy; Copyright 2099. All Rights Reserved.<br>
+    <a href="mailto:info@MetalitacPrivateLimited.com">Requestinformation</a><br>
+    Vanaja Chowdari Alla &nbsp; &nbsp; C0874223<br>
+  </footer>
+  </div>
+  <!-- wrapper ends here-->
+</body>
+</html>

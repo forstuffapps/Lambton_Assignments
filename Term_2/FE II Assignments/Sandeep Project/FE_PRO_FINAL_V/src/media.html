@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- This website is developed by your_name -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hillier Fryers</title>
+    <link rel="stylesheet" href="../css/media.css" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="sd_gallery.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html">
+        <img src="../images/logo.jpeg" alt="Hillier Fryers" />
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="team.html">Our Team</a>
+          </li>
+          <li>
+            <a href="specials.html">Specials</a>
+          </li>
+          <li>
+            <a href="training.html">Training</a>
+          </li>
+          <li>
+            <a href="media.html"><u>Media</u></a>
+          </li>
+          <li>
+            <select
+              name="reports"
+              id="select"
+              onchange="window.open(this.options[this.selectedIndex].value);"
+            >
+              <option value="">Reports</option>
+              <option value="Report_1.html">Report 1</option>
+              <option value="Report_2.html">Report 2</option>
+              <option value="Report_3.html">Report 3</option>
+              <option value="Report_4.html">Report 4</option>
+            </select>
+          </li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="audio">
+        <!-- <h2>Listen to our latest podcast</h2> -->
+        <audio controls>
+          <source src="../media/onlyaudio.mp3" type="audio/mp3" />
+          <!-- <source src="audio/podcast.ogg" type="audio/ogg" /> -->
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="video">
+        <h2>Watch our latest video</h2>
+        <video controls>
+          <source src="../media/video.mp4" type="video/mp4" />
+          Your browser does not support the video element.
+        </video>
+      </div>
+
+
+    <h1>View our Books</h1>
+    <img id="image" src="images/book1.jpg" alt="HTML5 and CSS3" >
+    <div id="carousel" >
+        <div id="left_button" class="button_panel"><img src="images/left.jpg" alt=""></div>
+        <div id="display_panel"> 
+            <ul id="image_list">
+                <li><a href="images/book1.jpg"><img src="images/book1.jpg" alt="HTML5 and CSS3"></a></li>
+                <li><a href="images/book2.jpg"><img src="images/book2.jpg" alt="Java Servlets and JSP"></a></li>
+                <li><a href="images/book3.jpg"><img src="images/book3.jpg" alt="JavaScript and jQuery"></a></li>
+                <li><a href="images/book4.jpg"><img src="images/book4.jpg" alt="Android programming"></a></li>
+                <li><a href="images/book5.jpg"><img src="images/book5.jpg" alt="MySQL"></a></li>
+                <li><a href="images/book6.jpg"><img src="images/book6.jpg" alt="PHP and MySQL"></a></li>
+                <li><a href="images/book7.jpg"><img src="images/book7.jpg" alt="Oracle SQL and PL/SQL"></a></li>
+                <li><a href="images/book8.jpg"><img src="images/book8.jpg" alt="ASP.NET 4.6 web programming with C# 2015"></a></li>
+                <li><a href="images/book9.jpg"><img src="images/book9.jpg" alt="SQL Server"></a></li>
+            </ul>
+        </div>
+        <div id="right_button" class="button_panel"><img src="images/right.jpg" alt=""></div>
+    </div>
+
+
+
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>
+          &copy; Copyright 2099. All Rights Reserved. <br />
+          <a href="mailto:info@hillierfryers.com"> Request information</a>
+        </p>
+        <p>Sai Sandeep Reddy Dondeti &nbsp;&nbsp; C0872710</p>
+      </div>
+    </footer>
+  </body>
+</html>

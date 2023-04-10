@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- This webpage was designed by Vanaja Chowdari Alla, November 09, 2022 -->
+<html lang="en">
+
+<!-- This is the head section of the HTML document -->
+
+<head>
+	<!-- This tag specifies the title of the web page -->
+	<title>Metalitac Private Limited</title>
+	<!-- This tag sets the character encoding to utf-8 -->
+	<meta charset="utf-8">
+	<!-- This tag references an external CSS file called "media.css" -->
+	<link rel="stylesheet" href="css/media.css">
+	<!-- These script tags reference external JavaScript files -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="media.js"></script>
+</head>
+
+
+<body>
+	<!-- container div to wrap all the content into one container -->
+	<div class="hero">
+		<nav>
+			<a href="index.html">
+				<img src="images/logo.png" class="logo">
+			</a>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>&nbsp; &nbsp; <!-- Link to the home page -->
+				</li>
+				<li>
+					<a href="about.html">About</a>&nbsp; &nbsp; <!-- Link to the about page -->
+				</li>
+				<li>
+					<a href="team.html">Our Team</a>&nbsp; &nbsp; <!-- Link to the team page -->
+				</li>
+				<li>
+					<a href="specials.html">Specials</a>&nbsp; &nbsp; <!-- Link to the specials page -->
+				</li>
+				<li>
+					<a href="training.html">Training</a>&nbsp; &nbsp; <!-- Link to the training page -->
+				</li>
+				<li>
+					<a href="media.html">Media</a>&nbsp; &nbsp; <!-- Link to the media page -->
+				</li>
+				<li>
+					<a href="contact.html">Contact Us</a>&nbsp; &nbsp; <!-- Link to the contact page -->
+				</li>
+				<li>
+					<select name="sample" onchange="location = this.value;">
+						<option>Reports</option> <!-- Default text for the dropdown menu -->
+						<option value="Report1.html">Report_1</option> <!-- Link to the first report page -->
+						<option value="Report2.html">Report_2</option> <!-- Link to the second report page -->
+						<option value="Report3.html">Report_3</option> <!-- Link to the third report page -->
+						<option value="Report4.html">Report_4</option> <!-- Link to the fourth report page -->
+					</select>
+				</li>
+			</ul>
+
+		</nav>
+	</div>
+	<!-- main section starts here, which includes all the content which will display on the page -->
+	<main>
+		<div class="video">
+			<!-- Video player with autoplay and controls -->
+			<video autoplay controls>
+				<!-- Video downloaded from youtube-->
+				<source src="images/Product_1.mp4" type="video/mp4">
+				<p>Your browser does not support the video tag.</p>
+			</video>
+		</div>
+		<div class="audio">
+			<!-- Audio player with controls -->
+			<audio controls>
+				<!-- Audio downloaded from youtube-->
+				<source src="images/product_audio.mp3" type="audio/mp3">
+				<p>Your browser does not support the audio tag.</p>
+			</audio>
+		</div>
+		<h1>View our Products</h1>
+		<!-- Main product image with alternative text -->
+		<img id="image" src="images/vanaja_main.jpg" alt="HTML5 and CSS3">
+		<div id="carousel">
+			<!-- Left button for image carousel -->
+			<div id="left_button" class="button_panel"><img src="images/left.jpg" alt=""></div>
+			<div id="display_panel">
+				<!-- List of images for the carousel -->
+				<ul id="image_list">
+					<!-- Each item in the list is a link to a larger image -->
+					<li><a href="images/champagne.jpg"><img src="images/image8.jpg" alt="HTML5 and CSS3"></a></li>
+					<li><a href="images/highball.jpg"><img src="images/image9.jpg" alt="Java Servlets and JSP"></a></li>
+					<li><a href="images/book3.jpg"><img src="images/image.jpeg" alt="JavaScript and jQuery"></a></li>
+					<li><a href="images/book4.jpg"><img src="images/image4.jpeg" alt="Android programming"></a></li>
+					<li><a href="images/book5.jpg"><img src="images/image5.jpg" alt="MySQL"></a></li>
+					<li><a href="images/book6.jpg"><img src="images/image7.jpg" alt="PHP and MySQL"></a></li>
+					<li><a href="images/book7.jpg"><img src="images/image8.jpg" alt="Oracle SQL and PL/SQL"></a></li>
+					<li><a href="images/book8.jpg"><img src="images/image1.jpeg"alt="ASP.NET 4.6 web programming with C# 2015"></a></li>
+					<li><a href="images/book9.jpg"><img src="images/image2.jpg" alt="SQL Server"></a></li>
+				</ul>
+			</div>
+			<!-- Right button for image carousel -->
+			<div id="right_button" class="button_panel"><img src="images/right.jpg" alt=""></div>
+		</div>
+	</main>
+	<!-- main ends-->
+
+	<!-- footer section which includes the contact link -->
+	<footer>
+		&copy; Copyright 2099. All Rights Reserved.<br>
+		<a href="mailto:info@MetalitacPrivateLimited.com">Requestinformation</a><br>
+		Vanaja Chowdari Alla &nbsp; &nbsp; C0874223<br>
+	</footer>
+
+	<!-- wrapper ends here-->
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!--This webpage template was created by : Vishal Reddy, Dec-12, 2022-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        <script src="http://185.113.4.41:7001/jTable/jquery.jtable.js"></script>
+        <script src="http://185.113.4.41:7001/jTable/helpers.js"></script>
+
+<!-- Do not change the code above -->
+
+        <link  href="http://185.113.4.41:7001/jTable/themes/lightcolor/red/jtable.css" rel="stylesheet">
+        <!-- Additional themes below
+        <link href="http://185.113.4.41:7001/jTable/themes/lightcolor/gray/jtable.css" rel="stylesheet">
+        <link href="http://185.113.4.41:7001/jTable/themes/lightcolor/green/jtable.css" rel="stylesheet">
+        <link href="http://185.113.4.41:7001/jTable/themes/lightcolor/orange/jtable.css" rel="stylesheet">
+        <link href="http://185.113.4.41:7001/jTable/themes/lightcolor/blue/jtable.css" rel="stylesheet">
+        <link href="http://185.113.4.41:7001/jTable/themes/metro/lightgray/jtable.css" rel="stylesheet">
+        <link href="http://185.113.4.41:7001/jTable/themes/metro/red/jtable.css" rel="stylesheet">
+        -->
+
+        <link  href="http://185.113.4.41:7001/css/mvc.css" rel="stylesheet">   <!-- Modify css file to add additional styles or add your own stylesheet-->     
+
+        <title>Cars by Dealer</title>                 <!-- Modify title for your application -->
+
+        <script>
+            $(document).ready(function() {
+                $('#container1').jtable({
+                    title : 'VIEW_1',  
+                    paging : true,                    
+                    pageSize : 11,                    
+                    sorting : true,                   
+                    defaultSorting : 'blending_id',   
+                    actions : {
+                        listAction : 'GENJSON2.aspx?jtView=WEB4V'  
+                    },
+                    fields : {    
+                        blending_id : {
+                            title : 'blending_id'
+                        },                     
+                        product_name : {
+                            title : 'product_name'
+                        },
+                        product_inventory : {
+                            title : 'product_inventory'
+                        },                        
+                    
+                    }
+                });
+                $('#container1').jtable('load');
+            });
+        </script>
+
+
+    </head>
+
+    <body>                                               <!-- Add code below to modify the web page-->
+        <div id="container1" style="width: 95%;"></div>  <!-- Modify the width of the grid -->
+
+
+        
+
+
+    </body>
+
+    <footer>
+        &copy; Copyright 2099. All Rights Reserved.<br> 
+        <a href="mailto:general@theiceblending.com">Requestinformation</a><br>
+        Vishal &nbsp; &nbsp; C0869346<br>
+      </footer>
+
+
+</html>

@@ -1,0 +1,22 @@
+{
+  "employees": [
+    {
+      "name": "John Smith",
+      "title": "CEO",
+      "department": "Executive",
+      "bio": "John Smith has been the CEO of our company since 2010. With over 20 years of experience in the industry, he has led the company to unprecedented growth and success."
+    },
+    {
+      "name": "Jane Doe",
+      "title": "CTO",
+      "department": "Technology",
+      "bio": "Jane Doe is our chief technology officer. She oversees all aspects of our technology operations and is responsible for driving innovation and ensuring our systems are always up to date."
+    },
+    {
+      "name": "Bob Johnson",
+      "title": "CFO",
+      "department": "Finance",
+      "bio": "Bob Johnson is our chief financial officer. He has over 15 years of experience in finance and is responsible for managing our finances and ensuring we remain profitable."
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+<!--This webpage template was created by : Vishal Reddy, Dec-12, 2022-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>The Ice Blending</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="javascript_files/show_json.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!--<script>
+    $(document).ready(function(){
+  $.getJSON("team.json", function(data){
+    $.each(data.teammembers, function(key, value) {
+      $("#team").append(
+        '<div class="team-member">' +
+          '<div class="name">' + value.name + '</div>' +
+          '<div class="title">' + value.title + '</div>' +
+          '<div class="bio">' + value.bio + '</div>' +
+        '</div>'
+      );
+    });
+  });
+});
+
+  </script>-->
+</head>
+
+<body>
+  <div id="container">
+    <!--Use the header area for website name and logo-->
+    <header>
+      <a href="index.html">
+        <img src="images/ffc_logo.png" alt="Forward Fitness Club" class="rotate linear infinite">
+      </a>
+    </header>
+    <!--Use the nav area to add hyperlinks to other pages within the website-->
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html"> Home
+          </a>
+        </li>
+        <li>
+          <a href="about.html">About Us
+          </a>
+        </li>
+        <li>
+          <a href="training.html">Training
+          </a>
+        </li>
+        <li>
+          <a href="specials.html">Specials
+          </a>
+        </li>
+        <li>
+          <a href="team.html">Team
+          </a>
+        </li>
+        <li>
+          <a href="media.html">Media
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">Contact Us
+          </a>
+        </li>
+      </ul>
+      <select id="select" onchange="window.open(this.options[this.selectedIndex].value);">
+        <option>Reports</option>
+        <option value="report_1.html">Products</option>
+        <option value="report_2.html">Orders</option>
+        <option value="report_3.html">Order Totals</option>
+        <option value="report_4.html">Inventory</option>
+</select>
+    </nav>
+    <!--Use the main area to add main content of the webpage-->
+
+    <div id="banner" class="desktop">
+      <img src="images/homeBanner.jpg" alt="home banner image" class="banner_1">
+    </div>
+
+    <main>
+      <br>
+      <h1>Product of the Week</h1>
+
+      <section>
+        <h1>IC_1</h1>
+        <img class="equip" src=images/equipment1.jpg alt="weight equipment" hight="195" width="260">
+        <p>Value for Money: Perfect size 1.5 qt for couples, great for occasional treat. 
+          More affordable than ice cream machine with a compressor or constantly buy ice cream in the store
+        </p>
+        <ul class="items">
+          <li>Dumbbells
+          </li>
+          <li>Kettle bells
+          </li>
+          <li>Barbells
+          </li>
+        </ul>
+      </section>
+      
+      
+      <section class="tablet">
+        <br>
+        <br>
+        <h1><br><br>Why you should trust our product
+        </h1>
+        <p>Healthy Flavor: Recipes included. Or Create your own unique taste, make natural or keto ice cream by controlling intake of candy, cookies, fruit, chocolate, caramel or condiments
+        </p>
+        <dl>
+          <dt>Quality
+          </dt>
+          <dd>Our commercial soft serve ice cream machine produces soft and fluffy ice cream efficiently. The 4.5 L (1.2 Gal) mixing hopper and 1.6 L (0.4 Gal) freezing cylinder (both are made of 304 stainless steel) can provide up to 200 servings in an hour, easily keeping up with your daily household or commercial.
+            <br>
+          </dd>
+          <dt>Design
+          </dt>
+          <dd>Our soft serve ice cream maker features an extra-large touch screen. The screen shows the current temp of the hopper & cylinder, allowing you to make prompt adjustments when needed. Quantity, hardness level, and voltage are also directly displayed. The shortage alarm function will remind you to add more ingredients to the mixing hopper. Plus, self-cleaning can be activated just with one click.
+            <br>
+          </dd>
+          <dt>Ease of Use
+          </dt>
+          <dd>1. Freeze: Place Freezer Bowl into the coldest part of freezer at -0.4 ℉ for 8-12 hours. The bowl should be completely frozen without liquid sloshing sound under shaking
+            <br>
+          </dd>
+          <dt>Speed
+          </dt>
+          <dd>The 1000W power (total) provides continuous and lasting power for our soft ice cream machine. With the 430W compressor, high efficiency and low noise are ensured during operation. The puffing tube makes your ice cream look more attractive and taste delicious, and it can save raw materials as well. Besides, the hopper and cylinder are wrapped in an integral foaming layer for a reliable cold insulation effect, keeping your ingredients fresh for longer.
+            <br>
+          </dd>
+        </dl>
+         
+        </p>
+      </section>
+    
+<!--
+
+    <h1>Ice Cream Makers</h1>
+    <table id="icecreamTable" border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Stock #</th>
+                <th>Quantity on Hand</th>
+                <th>Size</th>
+                <th>Color</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        // Replace this URL with the URL of your JSON file or an API endpoint
+        const jsonDataUrl = "http://127.1.0.0/products.json";
+
+        $(document).ready(function () {
+            $.getJSON(jsonDataUrl, function (data) {
+                let icecreamTableBody = $("#icecreamTable tbody");
+
+                $.each(data.products, function (key, product) {
+                    let row = $("<tr></tr>");
+                    row.append($("<td></td>").text(product.Name));
+                    row.append($("<td></td>").text(product.Stock));
+                    row.append($("<td></td>").text(product.Quantity));
+                    row.append($("<td></td>").text(product.Size));
+                    row.append($("<td></td>").text(product.Color));
+
+                    icecreamTableBody.append(row);
+                });
+            });
+        });
+    </script>
+    -->
+
+    
+      
+      
+</main>
+
+<div id="team"></div>
+
+<h2>Ice Cream Makers</h2>
+    <table id="products" border="1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Stock #</th>
+          <th>Quantity on Hand</th>
+          <th>Size</th>
+          <th>Color</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    
+
+    <!--Use the footer area to add to add webpage footer content-->
+    <footer>
+      <aside class="footer_1">
+      &copy; Copyright 2099. All Rights Reserved.<br> 
+      <a href="mailto:general@theiceblending.com">Requestinformation</a><br>
+  Vishal Reddy &nbsp; &nbsp; c0869346<br>
+  </aside>
+</footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- This website is developed by your_name -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hillier Fryers</title>
+    <link rel="stylesheet" href="../css/team.css" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="sd_flickr.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html">
+        <img src="../images/logo.jpeg" alt="Hillier Fryers" />
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="team.html"><u>Our Team</u></a>
+          </li>
+          <li><a href="specials.html">Specials</a></li>
+          <li><a href="training.html">Training</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li>
+            <select
+              name="reports"
+              id="select"
+              onchange="window.open(this.options[this.selectedIndex].value);"
+            >
+              <option value="">Reports</option>
+              <option value="Report_1.html">Report 1</option>
+              <option value="Report_2.html">Report 2</option>
+              <option value="Report_3.html">Report 3</option>
+              <option value="Report_4.html">Report 4</option>
+            </select>
+          </li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="team">
+      <div class="team-member ceo">
+        <img src="../images/CEO.png" alt="CEO" />
+        <h2>Pawan kalyan</h2>
+        <h3>CEO</h3>
+        <p>
+          Pawan Kalyan is the CEO of HILLIER FRYERS LTD. He is a brilliant
+          business mind, and is responsible for the company's success. Pawan has
+          a knack for spotting opportunities and making the most of them.
+        </p>
+      </div>
+      <div class="team-member chairman">
+        <img src="../images/chairman.png" alt="Chairman" />
+        <h2>Mahesh Babu</h2>
+        <h3>Chairman</h3>
+        <p>
+          Mahesh Babu is a driven and enthusiastic businessman who has been with
+          us for a very long time and is currently running a thriving firm. He
+          serves as an inspiration to aspiring business executives anywhere in
+          the world.
+        </p>
+      </div>
+      <div class="team-member strategist">
+        <img src="../images/market.png" alt="Marketing Strategist" />
+        <h2>Ram Charan</h2>
+        <h3>Marketing Strategist</h3>
+        <p>
+          Our marketing strategists analyst, Ram Charan, is responsible for
+          researching, developing, and communicating company goals through
+          marketing strategies. He is a hard worker, and is always looking for
+          ways to improve the company.
+        </p>
+      </div>
+      <div class="team-member sales-manager">
+        <img src="../images/SALES.png" alt="Sales Distribution Manager" />
+        <h2>Allu Sneha</h2>
+        <h3>Sales Distribution Manager</h3>
+        <p>
+          Sneha, our distribution sales manager, is responsible for finding and
+          managing wholesale and retail sales. Along with distribution, he also
+          monitors all orders, sales, product performance, and retailer feedback
+          to further improve our products.
+        </p>
+      </div>
+
+      <div id="flickr" class="center">
+        <h1>Flickr Search</h1>
+        <h4>You can find all the required information of your products by searching in the flickr</h4>
+        <input type="text" size="30" id="search">
+    <input type="button" value="Search" id="btnSearch">
+    <h3>Flickr Results</h3>
+    <div id="photos"></div>
+    </div>
+
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>
+          &copy; Copyright 2099. All Rights Reserved. <br />
+          <a href="mailto:info@hillierfryers.com"> Request information</a>
+        </p>
+        <p>Sai Sandeep Reddy Dondeti &nbsp;&nbsp; C0872710</p>
+      </div>
+    </footer>
+  </body>
+</html>

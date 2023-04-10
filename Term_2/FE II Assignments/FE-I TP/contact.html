@@ -1,0 +1,175 @@
+<!--This webpage template was created by : Vishal Reddy, Dec-12, 2022-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>The Ice Blending
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="javascript_files/form_validate.js"></script>
+  <script src="jquery.validate.min.js"></script>
+	<script src="additional-methods.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <!--Use the header area for website name and logo-->
+    <header>
+      <a href="index.html">
+        <img src="images/ffc_logo.png" alt="Forward Fitness Club" class="rotate linear infinite">
+      </a>
+    </header>
+    <!--Use the nav area to add hyperlinks to other pages within the website-->
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html"> Home
+          </a>
+        </li>
+        <li>
+          <a href="about.html">About Us
+          </a>
+        </li>
+        <li>
+          <a href="training.html">Training
+          </a>
+        </li>
+        <li>
+          <a href="specials.html">Specials
+          </a>
+        </li>
+        <li>
+          <a href="team.html">Team
+          </a>
+        </li>
+        <li>
+          <a href="media.html">Media
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">Contact Us
+          </a>
+        </li>
+      </ul>
+      <select id="select" onchange="window.open(this.options[this.selectedIndex].value);">
+        <option>Reports</option>
+        <option value="report_1.html">Products</option>
+        <option value="report_2.html">Orders</option>
+        <option value="report_3.html">Order Totals</option>
+        <option value="report_4.html">Inventory</option>
+</select>
+    </nav>
+    <!--Use the main area to add main content of the webpage-->
+    <main>
+      <h2>Contact Us</h2>
+
+      <h2>To order our latest product please follow the procedures</h2>
+      <!--  
+      <form method="get" name="contact_form" id="contact_form">
+        
+
+        <label for="fName">First Name:</label>
+        <input type="text" name="fName" id="fName"><br>
+
+        <label for="lName">Last Name:</label>
+        <input type="text" name="lName" id="lName"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone"><br>
+
+
+        <p>What are the premium features that you are opting for</p>
+        
+        <ul>
+          <li><input type="checkbox" name="grpfit" id="grpfit" value="grpfit" class="chkbx">Speed Control</li>
+          <li><input type="checkbox" name="prtrain" id="prtrain" value="prtrain" class="chkbx">LCD Screen</li>
+          <li><input type="checkbox" name="nutr" id="nutr" value="nutr" class="chkbx">Design</li>
+        </ul><br>
+
+        <div class="dec-bottom-margin">
+          <label for="reference">Model Type:</label>
+          <select name="reference" id="reference">
+            <option value="ad">IC_1 320k</option>
+            <option value="friend">IC_1 420k</option>
+            <option value="google">IC_2 320k</option>
+            <option value="social">IC_2 420k</option>
+            <option value="other">IC_3 420k</option>
+          </select><br>
+        </div>
+
+        <label for="questions">Comments</label>
+        <textarea id="questions" name="questions" rows="3" cols="25"></textarea><br>
+
+        <input type="submit" id="submit" value="Submit" class="btn"><br>
+        <input type="reset" id="reset" value="Reset Form" class="btn"><br>
+      </form>
+
+    -->
+    <form action="submit_form.html" method="get"
+    name="contact_form" id="contact_form">
+
+    
+      <h3><legend>Contact Information</legend></h3>
+      <label for="name">First Name:</label>
+    <input type="text" name="fname" id="fname"><br>
+    <label for="name">Last Name:</label>
+    <input type="text" name="lname" id="lname"><br>
+    <label for="dob">DOB:</label>
+        <input type="text" name="dob" id="dob" ><br>
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email"><br>
+    <label for="phone">Phone:</label>
+    <input type="text" name="phone" id="phone" placeholder="999-999-9999"><br>
+  <br>
+
+    <h3><legend>Premium Features</legend></h3>
+        
+        <label>Premium Controls:</label>
+        <select name="Controls" id="Controls">
+          <option value="0">Speed Control</option>
+          <option value="1">LCD Screen</option>
+          <option value="2">Design</option>
+        </select><br>
+        <label>Model:</label>
+        <select name="Model" id="Model">
+          <option value="0">IC_1 320k</option>
+          <option value="1">IC_1 420k</option>
+          <option value="2">IC_2 320k</option>
+          <option value="3">IC_2 420k</option>
+          <option value="4">IC_3 520k</option>        		        		        		
+        </select><br>        	
+  
+  <input type="submit" id="submit" value="Submit Request" ><br>
+
+</form>
+      <p>If you face any issues while ordering the product please contact through below sources
+      </p>
+      <p>Phone Number</p>
+      <p> <a class="mobile" href="tel:8145559608">(814) 555-9608
+        </a>
+        <span class="desktop">(814) 555-9608
+        </span>
+      </p>
+      <p>Email Address
+      </p>
+      <p> <a href="mailto:queries@theiceblending.com" class="contact">queries@theiceblending.com</a></p>
+    </main>
+    <!--Use the footer area to add to add webpage footer content-->
+    <footer>
+      <aside class="footer_1">
+      &copy; Copyright 2099. All Rights Reserved.<br> 
+      <a href="mailto:general@theiceblending.com">Requestinformation</a><br>
+  Vishal Reddy &nbsp; &nbsp; c0869346<br>
+  </aside>
+</footer>
+  </div>
+</body>
+
+</html>

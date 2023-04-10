@@ -1,0 +1,165 @@
+body {
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+/* for show more collapse and hide */
+div.hide {
+	display: none;
+}
+
+#vecta_menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+#vecta_menu li {
+  margin: 0 15px;
+}
+
+label.error {
+  float: none;
+  color: red;
+  font-size: 87.5%;
+}
+
+.menu-container
+{
+  background-color: #01101d; 
+}
+
+/* the styles for the carousel */
+.button_panel	{
+	height: 125px;
+	padding: 50px 15px;
+	float: left;
+}
+.button_panel img {
+	width: 25px;
+	height: 25px;
+}
+#display_panel {
+	width: 300px;
+	overflow: hidden;
+	float: left;			
+	height: 125px;
+}
+#image_list {
+	position: relative;	
+	left: 0px;
+    width: 900px;
+    list-style: none;  
+}
+#image_list li	{
+	float: left;
+	width: 100px;
+}
+#image_list li img	{
+	width: 95px;
+	
+}
+
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #1f1e62;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+nav {
+  flex: 1;
+  padding-right: 50px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 20px;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+nav select {
+  margin-left: 20px;
+  padding: 5px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #1f1e62;
+  border: none;
+  cursor: pointer;
+}
+
+.banner {
+  background-image: url("./images/image15.jpg");
+  background-size: 100%;
+  opacity: 1;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #1f1e62;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 450px;
+}
+
+footer {
+  background-color: #1f1e62;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- This webpage was designed by Vanaja Chowdari Alla, November 09, 2022-->
+<html lang="en">
+
+<head>
+	<title>Metalitac Private Limited</title>
+	<!-- Define the character encoding to be UTF-8 -->
+	<meta charset="utf-8">
+	<!-- Link to an external CSS file that defines styles for the about page -->
+	<link rel="stylesheet" href="css/about.css">
+	<!-- Import the jQuery library from a CDN -->
+	<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<!-- Import a JavaScript file specific to the about page -->
+	<script src="about.js"></script>
+	<!-- Import a plugin that highlights the active menu item -->
+	<script src="highlightMenu.js"></script>
+	<!-- Import a library that provides syntax highlighting for code snippets -->
+	<script src="highlight.js"></script>
+	<!-- Use jQuery to call the highlightMenu plugin on the vecta_menu element when the page is ready -->
+	<script>
+		$(document).ready(function () {
+			$("#vecta_menu").highlightMenu({
+				//bgColor: '#000000',
+				//color: '#ffffff'
+			});
+		});
+	</script>
+	<!-- Set the viewport meta tag to define the initial size and scale of the viewport -->
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+</head>
+
+<body>
+	<!-- <nav>
+		<img src="images/logo.png" class="logo", height="60px">
+		<ul>
+			<a href="index.html">Home</a>&nbsp; &nbsp;
+			<a href="about.html">About</a>&nbsp; &nbsp;
+			<a href="team.html">Our Team</a>&nbsp; &nbsp;
+			<a href="specials.html">Specials</a>&nbsp; &nbsp;
+			<a href="training.html">Training</a>&nbsp; &nbsp;
+			<a href="media.html">Media</a>&nbsp; &nbsp;
+			<a href="contact.html">Contact Us</a>&nbsp; &nbsp;
+
+			<select name="sample" onchange="location = this.value;">
+				<option>Reports</option>
+				<option value="Report_1.html">Report_1</option>
+				<option value="Report_2.html">Report_2</option>
+				<option value="Report_3.html">Report_3</option>
+				<option value="Report_4.html">Report_4</option>
+			</select>
+
+		</ul>
+	</nav> -->
+	<!-- Create a div with a class of "hero" -->
+	<div class="hero">
+
+		<!-- Create a navigation bar using a nav element -->
+		<nav>
+
+			<!-- Create a logo that links to the homepage -->
+			<a href="index.html">
+				<img src="images/logo.png" class="logo">
+			</a>
+
+			<!-- Create an unordered list with an ID of "vecta_menu" for the navigation links -->
+			<ul id="vecta_menu">
+
+				<!-- Create a list item for the "Home" link -->
+				<li>
+					<a href="index.html">Home</a>&nbsp; &nbsp;
+				</li>
+
+				<!-- Create a list item for the "About" link -->
+				<li>
+					<a href="about.html">About</a>&nbsp; &nbsp;
+				</li>
+
+				<!-- Create a list item for the "Our Team" link -->
+				<li>
+					<a href="team.html">Our Team</a>&nbsp; &nbsp;
+				</li>
+
+				<!-- Create a list item for the "Specials" link -->
+				<li>
+					<a href="specials.html">Specials</a>&nbsp; &nbsp;
+				</li>
+
+				<!-- Create a list item for the "Training" link -->
+				<li>
+					<a href="training.html">Training</a>&nbsp; &nbsp;
+				</li>
+
+				<!-- Create a list item for the "Media" link -->
+				<li>
+					<a href="media.html">Media</a>&nbsp; &nbsp;
+				</li>
+
+				<!-- Create a list item for the "Contact Us" link -->
+				<li>
+					<a href="contact.html">Contact Us</a>&nbsp; &nbsp;
+				</li>
+
+				<!-- Create a list item with a dropdown menu for "Reports" -->
+				<li>
+					<select name="sample" onchange="location = this.value;">
+						<option>Reports</option>
+						<option value="Report1.html">Report_1</option>
+						<option value="Report2.html">Report_2</option>
+						<option value="Report3.html">Report_3</option>
+						<option value="Report4.html">Report_4</option>
+					</select>
+				</li>
+
+			</ul> <!-- Close the unordered list -->
+
+		</nav> <!-- Close the navigation bar -->
+
+	</div> <!-- Close the div with a class of "hero" -->
+
+	<!-- main section starts here, which includes all the content which will display on the page -->
+	<main>
+		<h1> Metalitac Private Limited</h1>
+		<div>
+			<p>Metalitac Private Limited is a Drinkware Manufacturing company which provides authentic style of all
+				drinkware products. Metalitac Private Limited manufactures various kinds of drinkware made of premium
+				quality material which can be used to serve any kind of drink.</p>
+		</div>
+		<div class="hide">
+			<p>Metalitac Private Limited. welcomes all forms of drinking, whether you're swilling with flair, pouring
+				with poise, chugging with grace, or anything in between. Low minimums for both modern and traditional
+				stylings constructed of top-notch materials are discussed here, as well as premium branding options with
+				a long shelf life. Drinkware that always communicates a brand's reality is the standard..</p>
+		</div>
+		<a href="#">Show more</a>
+
+		<h2> Our Story </h2>
+		<div>
+			<p> Just 1 year ago, we had just 1 product in 1 color and 1 size. We now have over 65 variations, colors,
+				and
+				sizes.</p>
+		</div>
+		<div class="hide">
+			<p>With a few drinkware designs and big dreams, Created Co. launches its operations with the intention that
+				over a glass of wine, our drinkware can inspire, unite, and empower people.From the ground up, two lines
+				of specialised drinkware were designed, created, and introduced. These bar supplies swiftly spread to
+				all corners of the globe.</p>
+		</div>
+		<a href="#">Show more</a>
+
+		<h2> Six (or more) Reasons Why You Should Shop with us. </h2>
+		<ol>
+			<li> Increased Brand Exposure </li>
+			<li> 60,000+ Amazon Reviews </li>
+			<li> Long Lasting </li>
+			<li> Low Shipping Costs </li>
+			<li> Bonus Bundle </li>
+			<li> Affordable to Buy </li>
+		</ol>
+		<h2> Our guarantee </h2>
+		<b> 100% Satisfaction Guarantee. We promise to provide our customers with the highest quality products,
+			imprinted as you approved them or we'll rerun your order. </b>
+	</main>
+	<!-- main ends-->
+
+	<!-- footer section which includes the contact link -->
+	<footer>
+		&copy; Copyright 2099. All Rights Reserved.<br>
+		<a href="mailto:info@MetalitacPrivateLimited.com">Requestinformation</a><br>
+		Vanaja Chowdari Alla &nbsp; &nbsp; C0874223<br>
+	</footer>
+
+	<!-- wrapper ends here-->
+</body>
+
+</html>

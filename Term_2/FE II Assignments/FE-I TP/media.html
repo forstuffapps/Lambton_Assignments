@@ -1,0 +1,142 @@
+<!--This webpage template was created by : Vishal Reddy, Dec-12, 2022-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>The Ice Blending
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="javascript_files/carousel.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <!--Use the header area for website name and logo-->
+    <header>
+      <a href="index.html">
+        <img src="images/ffc_logo.png" alt="Forward Fitness Club" class="rotate linear infinite">
+      </a>
+    </header>
+
+    <!--Use the nav area to add hyperlinks to other pages within the website-->
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html"> Home
+          </a>
+        </li>
+        <li>
+          <a href="about.html">About Us
+          </a>
+        </li>
+        <li>
+          <a href="training.html">Training
+          </a>
+        </li>
+        <li>
+          <a href="specials.html">Specials
+          </a>
+        </li>
+        <li>
+          <a href="team.html">Team
+          </a>
+        </li>
+        <li>
+          <a href="media.html">Media
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">Contact Us
+          </a>
+        </li>
+      </ul>
+      <select id="select" onchange="window.open(this.options[this.selectedIndex].value);">
+        <option>Reports</option>
+        <option value="report_1.html">Products</option>
+        <option value="report_2.html">Orders</option>
+        <option value="report_3.html">Order Totals</option>
+        <option value="report_4.html">Inventory</option>
+</select>
+    </nav>
+
+    <!-- Home Page Banner -->
+    <main>
+    <div id="banner" class="desktop">
+      <img src="images/signup.jpg" alt="home banner image" class="about_banner">
+    </div>
+    
+    <h1> <br><br><br>Visualise our product </h1>
+    <p>Our soft serve machine combines user-friendly designs to improve your user experience. 
+      The dust-proof lid effectively keeps your mixtures clean and sanitary. The stainless handle is 
+      ergonomically designed and makes pressing ice cream out effortless. The extensive cooling vents 
+      on the back facilitate rapid heat dissipation and prevent over-heating damage. The drip tray is 
+      detachable for regular cleaning, and 4 rubber feet enhance the machine's stability.</p>
+
+      <div class="video">
+        <video autoplay controls>
+          <source src="media/video.mp4" type="video/mp4">
+          <source src="media/video.ogg" type="video/ogg">
+          <source src="media/video.webm" type="video/webm">
+          <p>Your browser does not support the
+            video tag.</p>
+        </video>
+        </div>
+
+    <h1> <br><br><br>Experience the product Aurally</h1>
+    <p>Designed in a compact size of 21.7"x8.3"x26.8"(550x210x680 mm), our commercial ice cream maker can 
+      perfectly fit on your countertop. The stainless steel construction and stylish color ensure enhanced 
+      durability and an eye-pleasing appearance. This unit is widely applicable for snack bars, cafés, bakeries, 
+      fast food chains, restaurants, buffets, etc..</p>
+
+        <div class="audio">
+      <audio controls>
+        <source src="media/audio.mp3" type="audio/mp3">
+        <source src="media/audio.ogg" type="audio/ogg">
+        <source src=" media/audio.wav" type="audio/wav">
+        <p>Your browser does not support the
+          audio tag.</p>
+      </audio>
+    </div>
+
+    <br>
+    
+<br>
+<br>
+<br>
+    <h1>View our Books</h1>
+    <img id="image" src="images/book1.jpg" alt="HTML5 and CSS3" >
+    <div id="carousel" >
+        <div id="left_button" class="button_panel"><img src="images/left.jpg" alt=""></div>
+        <div id="display_panel"> 
+            <ul id="image_list">
+                <li><a href="images/book1.jpg"><img src="images/book1.jpg" alt="HTML5 and CSS3"></a></li>
+                <li><a href="images/book2.jpg"><img src="images/book2.jpg" alt="Java Servlets and JSP"></a></li>
+                <li><a href="images/book3.jpg"><img src="images/book3.jpg" alt="JavaScript and jQuery"></a></li>
+                <li><a href="images/book4.jpg"><img src="images/book4.jpg" alt="Android programming"></a></li>
+                <li><a href="images/book5.jpg"><img src="images/book5.jpg" alt="MySQL"></a></li>
+                <li><a href="images/book6.jpg"><img src="images/book6.jpg" alt="PHP and MySQL"></a></li>
+                <li><a href="images/book7.jpg"><img src="images/book7.jpg" alt="Oracle SQL and PL/SQL"></a></li>
+                <li><a href="images/book8.jpg"><img src="images/book8.jpg" alt="ASP.NET 4.6 web programming with C# 2015"></a></li>
+                <li><a href="images/book9.jpg"><img src="images/book9.jpg" alt="SQL Server"></a></li>
+            </ul>
+        </div>
+        <div id="right_button" class="button_panel"><img src="images/right.jpg" alt=""></div>
+    </div>
+
+
+  </main>
+    <!--Use the footer area to add to add webpage footer content-->
+    <footer>
+      <aside class="footer_1">
+      &copy; Copyright 2099. All Rights Reserved.<br> 
+      <a href="mailto:general@theiceblending.com">Requestinformation</a><br>
+  Vishal Reddy &nbsp; &nbsp; c0869346<br>
+  </aside>
+</footer>
+  </div>
+</body>
+
+</html>

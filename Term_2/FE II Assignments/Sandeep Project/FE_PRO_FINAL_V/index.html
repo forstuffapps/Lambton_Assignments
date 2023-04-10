@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- This website is developed by your_name -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hillier Fryers</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="highlightMenu.js"></script>
+    <!-- Add jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Add jQuery UI library -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+  $(document).ready(function () {
+      $("#vecta_menu").highlightMenu({
+          //bgColor: '#000000',
+          //color: '#ffffff'
+      });
+  });
+</script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="./images/logo.jpeg" alt="Hillier Fryers" />
+      </a>
+      <nav>
+        <ul id="vecta_menu">
+          <li>
+            <a href="index.html"><u>Home</u></a>
+          </li>
+          <li><a href="./src/about.html">About</a></li>
+          <li><a href="./src/team.html">Our Team</a></li>
+          <li><a href="./src/specials.html">Specials</a></li>
+          <li><a href="./src/training.html">Training</a></li>
+          <li><a href="./src/media.html">Media</a></li>
+          <li>
+            <select
+              name="reports"
+              id="select"
+              onchange="window.open(this.options[this.selectedIndex].value);"
+            >
+              <option value="">Reports</option>
+              <option value="Report_1.html">Report 1</option>
+              <option value="Report_2.html">Report 2</option>
+              <option value="Report_3.html">Report 3</option>
+              <option value="Report_4.html">Report 4</option>
+            </select>
+          </li>
+          <li><a href="./src/contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+
+    <main>
+      <div class="banner">
+        <h1>Welcome to Hillier Fryers</h1>
+      </div>
+
+
+     
+
+
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p>
+          &copy; Copyright 2099. All Rights Reserved. <br />
+          <a href="mailto:info@hillierfryers.com"> Request information</a>
+        </p>
+        <p>Sai Sandeep Reddy Dondeti &nbsp;&nbsp; C0872710</p>
+      </div>
+    </footer>
+  </body>
+</html>

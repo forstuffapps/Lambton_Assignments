@@ -1,0 +1,263 @@
+@import url("/css/styles.css");
+
+/* Vanaja Chowdari Alla, November 09, 2022 */
+body, html {
+  height: 100%;
+}
+
+body{
+  background-attachment: fixed;
+  /* Image Referred from https://unsplash.com/photos/mV32xe8-irU */
+    background-image: url("/images/Drinkware.jpg"); 
+    opacity: 90;
+}
+
+div.hide {
+	display: none;
+}
+
+/* nav{
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  color: black;
+  justify-content: space-between;
+  } */
+
+
+  #container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* nav {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border-top: 5px solid #ffffff;
+    border-bottom: 5px solid #ffffff;
+  } */
+
+  img {
+    width: 8%;
+    height: auto;
+  }
+
+/*
+  a {
+    color: #58c00e
+  }
+
+  a:hover{
+    color: #0d0116;
+  }
+
+  a:visited{
+    color: #000000
+  } */
+
+.style_list{
+  color: #f9f5fc;
+  text-decoration: underline;
+
+}
+
+  main {
+    display: block;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ebe7ee;
+    box-shadow: 12px 12px 12px #D3F7BA;
+  }
+
+  footer {
+    font-size: 0.7em;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .heading_style_1{
+    color:rgb(191, 26, 125);
+  }
+
+  .heading_style_2{
+    color:rgb(25, 80, 248);
+  }
+
+
+
+  .desktop {
+    display: none;
+  }
+
+  .tablet {
+    display: none;
+  }
+
+
+
+  /* Media query for tablet viewport targets screen size with a minimum width of 660px. */
+@media only screen and (min-width: 660px) {
+  /* Style pecifies a horizontal display for navigation links */
+  nav li {
+    display: inline;
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-left: 0;
+    padding-right: 0;
+    width: 18%;
+    white-space: nowrap;
+  }
+
+  /* Style specifies clear and top margin properties for the main element */
+  main {
+    clear: left;
+    margin-top: 4em;
+  }
+
+  /* Style specifies to hide the mobile class */
+  .mobile {
+    display: none;
+  }
+
+  /* Style specifies to display the desktop class */
+  .desktop {
+    display: none;
+  }
+
+
+  /* Style specifies a display, float, and padding for the equip class */
+  .equip {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+  }
+
+  /* Style specifies a display, list-style-position, and bottom margin for the items class */
+  .items {
+    display: block;
+    list-style-position: inside;
+    margin-bottom: 5em;
+  }
+
+  /* Style specifies to display the tablet class */
+  .tablet {
+    display: inline;
+  }
+
+  /* Style specifies a font weight and top margin for description list terms */
+  dt {
+    font-weight: bold;
+    margin-top: 0.7em;
+  }
+}
+
+/* Media query for desktop viewport targets screens with a minimum width of 830px. */
+@media only screen and (min-width: 830px) {
+  /* Style specifies a width for container */
+  #container {
+    width: 80%;
+  }
+
+  .hero{
+    height: 23vh;
+  }
+
+  nav{
+    justify-content: flex-start;
+    padding-left: 4rem;
+  }
+
+  ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Style specifies margin and padding for the unordered list within the nav */
+  /* nav ul {
+    margin: 0;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+  } */
+
+  /* Style for navigation list items specifies a border radius, border, margin, width, and padding */
+  /* nav li {
+    border-radius: 0;
+    border-top: solid #000000;
+    border-bottom: solid #000000;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    width: 20%;
+  } */
+
+  /* Style for navigation links specifies display and padding */
+  /* nav li a {
+    display: inline-block;
+    padding: 0.7em;
+  } */
+
+  /* Style rules for pseudo-classes */
+  /* nav li a:link {
+    color: #ffffff;
+  }
+
+  nav li a:visited {
+    color: #ffff99;
+  }
+
+  nav li a:hover {
+    color: #e0720b;
+    font-style: italic;
+  } */
+
+  /* Style specifies border, shadow, margin, and padding for main element */
+  main {
+    border-style: none;
+    box-shadow: 0.5em 0.5em 0.5em #404040;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+
+  /* Style specifies left and right padding for paragraph elements within the main element */
+  main p {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  /* Style specifies a bottom margin for the items class */
+  .items {
+    margin-bottom: 6em;
+  }
+
+  .tablet {
+    display: none;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: inline;
+  }
+
+
+}
+
+

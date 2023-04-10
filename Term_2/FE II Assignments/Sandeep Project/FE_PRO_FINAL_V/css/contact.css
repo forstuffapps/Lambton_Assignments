@@ -1,0 +1,52 @@
+@import url("../style.css");
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+fieldset {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: .5em;
+}
+
+label.error {
+  float: none;
+  color: red;
+  font-size: 87.5%;
+}
+
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-img {
+  flex: 0 0 400px;
+  margin-right: 2rem;
+}
+
+.about-img img {
+  width: 100%;
+  height: auto;
+}
+
+.about-text {
+  flex: 1 1 60%;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}

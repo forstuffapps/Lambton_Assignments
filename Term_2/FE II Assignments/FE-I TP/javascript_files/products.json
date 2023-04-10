@@ -1,0 +1,117 @@
+{
+    "products": [
+      {
+        "Name": "Ice Cream Maker A",
+        "Stock": 1001,
+        "Quantity": 50,
+        "Size": "Small",
+        "Color": "Red"
+      },
+      {
+        "Name": "Ice Cream Maker B",
+        "Stock": 1002,
+        "Quantity": 45,
+        "Size": "Medium",
+        "Color": "Blue"
+      },
+      {
+        "Name": "Ice Cream Maker C",
+        "Stock": 1003,
+        "Quantity": 25,
+        "Size": "Large",
+        "Color": "Green"
+      },
+      {
+        "Name": "Ice Cream Maker D",
+        "Stock": 1004,
+        "Quantity": 30,
+        "Size": "Small",
+        "Color": "Yellow"
+      },
+      {
+        "Name": "Ice Cream Maker E",
+        "Stock": 1005,
+        "Quantity": 35,
+        "Size": "Medium",
+        "Color": "Pink"
+      },
+      {
+        "Name": "Ice Cream Maker F",
+        "Stock": 1006,
+        "Quantity": 20,
+        "Size": "Large",
+        "Color": "Orange"
+      },
+      {
+        "Name": "Ice Cream Maker G",
+        "Stock": 1007,
+        "Quantity": 40,
+        "Size": "Small",
+        "Color": "Purple"
+      },
+      {
+        "Name": "Ice Cream Maker H",
+        "Stock": 1008,
+        "Quantity": 60,
+        "Size": "Medium",
+        "Color": "Brown"
+      },
+      {
+        "Name": "Ice Cream Maker I",
+        "Stock": 1009,
+        "Quantity": 55,
+        "Size": "Large",
+        "Color": "Black"
+      },
+      {
+        "Name": "Ice Cream Maker J",
+        "Stock": 1010,
+        "Quantity": 70,
+        "Size": "Small",
+        "Color": "White"
+      },
+      {
+        "Name": "Ice Cream Maker K",
+        "Stock": 1011,
+        "Quantity": 65,
+        "Size": "Medium",
+        "Color": "Gray"
+      },
+      {
+        "Name": "Ice Cream Maker L",
+        "Stock": 1012,
+        "Quantity": 75,
+        "Size": "Large",
+        "Color": "Cyan"
+      },
+      {
+        "Name": "Ice Cream Maker M",
+        "Stock": 1013,
+        "Quantity": 80,
+        "Size": "Small",
+        "Color": "Magenta"
+      },
+      {
+        "Name": "Ice Cream Maker N",
+        "Stock": 1014,
+        "Quantity": 85,
+        "Size": "Medium",
+        "Color": "Lime"
+      },
+      {
+        "Name": "Ice Cream Maker O",
+        "Stock": 1015,
+        "Quantity": 90,
+        "Size": "Large",
+        "Color": "Maroon"
+      },
+      {
+        "Name": "Ice Cream Maker P",
+        "Stock": 1016,
+        "Quantity": 95,
+        "Size": "Small",
+        "Color": "Navy"
+      }
+    ]
+}
+  
