@@ -36,7 +36,7 @@ $(document).ready(
         phone: 
         {
           required: true,
-          phoneUS: true
+          phone: true
         }
       },
       messages: 
@@ -64,7 +64,7 @@ $(document).ready(
         phone: 
         {
           required: 'This field is required',
-          phoneUS: 'Please enter a valid Phone Number'
+          phone: 'Please enter a valid Phone Number'
         }
       }
     });
