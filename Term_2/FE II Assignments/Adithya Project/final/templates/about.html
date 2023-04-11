@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <style>
+        body{
+            background-color: gray;
+            background: url(/static/img/back5.jpg);
+            background-size: 100%;
+        }
+    </style>
+{% endblock %}
+{% block body %}
+   <nav>
+        <div class="navigation">
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/extention">EXTENTION</a></li>
+                <li><a href="/about">ABOUT</a></li>
+            </ul>
+        </div>
+        <div class="login">
+            <a href="/login">LOGIN</a>
+        </div>
+    </nav>
+
+    <div class="aboutmain">
+        <h1>About</h1><br>
+
+        <h2>CS50 Project</h2><br>
+
+        <h2>Aditya K Kontikal</h2><br>
+        <h2>E-mail: <a href="mailto:adiyakontikal@gmial.com">adiyakontikal@gmial.com</a></h2><br>
+        <h2>Phone: 555-555-555</h1><br>
+        <h2>From: Bangalore, India</h1><br>
+            <hr style="color: rgb(255, 255, 255);"></hr>
+        <h2>
+                 </ul>
+                <ul style="list-style: none; background-color: rgba(0, 0, 0, 0.048);" class="list-gap">
+                    <li><ul>Tools used:</ul></li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                    <li>Python</li>
+                    <li>DBMS</li>
+
+            </ul>
+        </h2>
+    </div>
+
+{% endblock %}

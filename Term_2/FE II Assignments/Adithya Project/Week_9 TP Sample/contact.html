@@ -1,0 +1,120 @@
+<!-- This webpage was designed by Aditya Kontikal, 15 Nov 2022 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<title>Project_Title</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<nav>
+		<a class="active" href="index.html"><img src="images/logo.png" alt="Company Banner Image" width="120"></a>
+		<a class="active" href="index.html">Home</a>
+		<div class="vertical-line"></div>
+		<a href="about.html">About</a>
+		<div class="vertical-line"></div>
+		<a href="team.html">Our Team</a>
+		<div class="vertical-line"></div>
+		<a href="specials.html">Specials</a>
+		<div class="vertical-line"></div>
+		<a href="training.html">Training</a>
+		<div class="vertical-line"></div>
+		<a href="media.html">Media</a>
+		<div class="vertical-line"></div>
+		<a href="contact.html">Contact Us</a>
+		<div class="vertical-line"></div>
+		<select id="select" onchange="window.open(this.options[this.selectedIndex].value);">
+
+			<option>Select Report</option>
+			<option value="report1.html">Products</option>
+			<option value="Report_2.html">Orders</option>
+			<option value="Report_3.html">Order Totals</option>
+			<option value="Report_4.html">Inventory</option>
+
+		</select>
+	</nav>
+
+	<br>
+	<br>
+	<main class="contactMain">
+		<img src="images/contact.jpg" width="300px">
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<form class="form">
+			<div class="formRow">
+				<fieldset class="field-container">
+					<legend class="required">First Name</legend>
+					<input size="18" autofocus type="text" required placeholder="Jack" class="input-field" />
+				</fieldset>
+				&nbsp
+				<fieldset class="field-container">
+					<legend class="required">Last Name</legend>
+					<input type="text" placeholder="Jonson" class="input-field" />
+				</fieldset>
+			</div>
+			<br>
+			<div class="formRow">
+				<fieldset class="field-container">
+					<legend class="required">Email</legend>
+					<input type="email" placeholder="Jack.Jonson@email.com" class="input-field" />
+				</fieldset>
+				&nbsp
+				<fieldset class="field-container">
+					<legend class="required">Phone</legend>
+					<input type="number" placeholder="9072849243" class="input-field" />
+				</fieldset>
+			</div>
+			<br>
+
+			<fieldset class="field-container">
+				<legend>Date of Birth</legend>
+				<input type="date" class="input-field" />
+			</fieldset>
+			<br>
+			<section class="options-container">
+				<div><span>Gender : </span>
+					<section class="options flex-row">
+						<span class="option">
+							<input type="radio" name="gender" id="male" />
+							<label for="male">Male</label>
+						</span>
+				</div>
+				<div><span class="option">
+						<input type="radio" name="gender" id="female" />
+						<label for="female">Female</label>
+					</span>
+				</div>
+
+			</section>
+			<br>
+			<section class="options-container">
+				<span class="text-sm">Get Notified about</span>
+				<section>
+					<span class="option">
+						<input type="checkbox" id="new" />
+						<label for="new">New Products</label>
+					</span>
+					<span class="option">
+						<input type="checkbox" id="marketing" />
+						<label for="marketing">Marketing</label>
+					</span>
+					<span class="option">
+						<input type="checkbox" id="discounts" />
+						<label for="discounts">Discounts</label>
+					</span>
+				</section>
+			</section>
+			<br>
+
+	</main>
+
+	<footer>
+		&copy; Copyright 2099. All Rights Reserved.<br>
+			<a class="mailto" href="mailto:sales@kitchenworks.com">Request information</a>
+			<br>Aditya Kontikal C0872259<br>
+	</footer>
+	</div>
+</body>

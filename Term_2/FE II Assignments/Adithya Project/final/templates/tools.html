@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <nav>
+        <div class="navigation">
+            <ul>
+               <li><a href="/">HOME</a></li>
+                <li><a href="/extention">EXTENTION</a></li>
+                <li><a href="/about">ABOUT</a></li>
+            </ul>
+        </div>
+        <div class="login">
+            <a href="/logout">LOGOUT</a>
+            <a href="#">From, {{ name }}</a>
+        </div>
+    </nav>
+
+    <div class="toolsmain">
+        <div class="bmi">
+            <a href="/bmi"><img src="/static/img/bmi1.jpg" alt=""></a>
+        </div>
+        <div class="cal">
+            <a href="#"><img src="/static/img/cal1.jpg" alt=""></a>
+        </div>
+        <div class="time">
+            <a href="#"><img src="/static/img/time1.jpg" alt=""></a>
+        </div>
+    </div>
+{% endblock %}
