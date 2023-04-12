@@ -5,6 +5,20 @@ body {
   background-color: #f1ebe5;
 }
 
+/* FE2 adds*/
+div.hide {
+	display: none;
+}
+
+.shown_class
+{
+  color:#ff0019;
+}
+
+
+
+
+
 
 #container {
   width: 100%;

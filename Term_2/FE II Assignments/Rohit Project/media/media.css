@@ -1,0 +1,50 @@
+/* This style sheet is created by Rohit Sai Pandugolla - C0878560 */
+
+@import url("../css/style.css");
+
+.media {
+  width: 100%;
+}
+
+.video-media {
+  width: 100%;
+  padding: 1em 2em;
+}
+
+.audio-media {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+
+/* the styles for the carousel */
+.button_panel	{
+	height: 125px;
+	padding: 50px 15px;
+	float: left;
+}
+.button_panel img {
+	width: 25px;
+	height: 25px;
+}
+#display_panel {
+	width: 300px;
+	overflow: hidden;
+	float: left;			
+	height: 125px;
+}
+#image_list {
+	position: relative;	
+	left: 0px;
+    width: 900px;
+    list-style: none;  
+}
+#image_list li	{
+	float: left;
+	width: 100px;
+}
+#image_list li img	{
+	width: 95px;
+	
+}

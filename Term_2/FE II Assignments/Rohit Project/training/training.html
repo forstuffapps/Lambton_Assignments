@@ -1,0 +1,313 @@
+<!DOCTYPE html5>
+<!-- This website was created by Pandugolla Rohit Sai -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!--adding style sheet to the website-->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="training.css" />
+    <title>Mahadev Enterprises</title>
+  </head>
+  <body>
+    <div id="container">
+      <!-- The header is the area for the website name or logo -->
+      <header>
+        <div class="header-content">
+          <a href="/index.html">
+            <img
+              class="logo"
+              src="../images/mahadev-enterprises-high-resolution-logo-color-on-transparent-background.png"
+              alt="Mahadev Enterprises Logo"
+            />
+          </a>
+          <div class="separator"></div>
+          <!-- The nav area is for hyperlinks to other pages within the same website -->
+          <nav>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../about/about.html">About Us</a></li>
+              <li><a href="../team/team.html">Our Team</a></li>
+              <li><a href="../specials/specials.html">Specials</a></li>
+              <li><a class="selected" href="#">Training</a></li>
+              <li><a href="../media/media.html">Media</a></li>
+              <li><a href="../contact/contact.html">Contact Us</a></li>
+              <li>
+                <select
+                  id="select"
+                  onchange="window.open(this.options[this.selectedIndex].value);"
+                >
+                  <option>Reports</option>
+                  <option value="/report1.html">Products</option>
+                  <option value="/report2.html">Orders</option>
+                  <option value="/report3.html">Order Totals</option>
+                  <option value="/report4.html">Inventory</option>
+                </select>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- The body of the content for a particular page, in this case the home page -->
+      <main class="hero training-container">
+        <div class="training">
+          <table class="training-table">
+            <!-- Start Table -->
+            <caption>
+              Product Training Schedule
+            </caption>
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Date</th>
+                <th>Price</th>
+                <th>Length</th>
+                <th>Room</th>
+                <th>Instructor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <section class="product-info">
+                    <img
+                      src="../images/refrigerators/refrigerator-image1.png"
+                      alt="fridge"
+                    />
+                  </section>
+                  <p>Samsung</p>
+                </td>
+                <td>27/12/2022</td>
+                <td>&dollar;499</td>
+                <td>3 hour</td>
+                <td>Room 1</td>
+                <td>Jack</td>
+              </tr>
+              <tr>
+                <td>
+                  <section class="product-info">
+                    <img
+                      src="../images/refrigerators/refrigerator-image2.png"
+                      alt="fridge"
+                    />
+                  </section>
+                  <p>LG</p>
+                </td>
+                <td>28/12/2022</td>
+                <td>&dollar;559</td>
+                <td>1 hour</td>
+                <td>Room 2</td>
+                <td>Alex</td>
+              </tr>
+              <tr>
+                <td>
+                  <section class="product-info">
+                    <img
+                      src="../images/refrigerators/refrigerator-image3.png"
+                      alt="fridge"
+                    />
+                  </section>
+                  <p>Haier</p>
+                </td>
+                <td>29/12/2022</td>
+                <td>&dollar;699</td>
+                <td>3 hour</td>
+                <td>Room 2</td>
+                <td>Susan</td>
+              </tr>
+              <tr>
+                <td>
+                  <section class="product-info">
+                    <img
+                      src="../images/refrigerators/refrigerator-image4.png"
+                      alt="fridge"
+                    />
+                  </section>
+                  <p>Whirlpool</p>
+                </td>
+                <td>30/12/2022</td>
+                <td>&dollar;449</td>
+                <td>2 hour</td>
+                <td>Room 1</td>
+                <td>Jack</td>
+              </tr>
+              <tr>
+                <td>
+                  <section class="product-info">
+                    <img
+                      src="../images/refrigerators/refrigerator-image5.png"
+                      alt="fridge"
+                    />
+                  </section>
+                  <p>Bosch</p>
+                </td>
+                <td>02/01/2023</td>
+                <td>&dollar;559</td>
+                <td>3 hour</td>
+                <td>Room 2</td>
+                <td>Alex</td>
+              </tr>
+              <tr>
+                <td>
+                  <section class="product-info">
+                    <img
+                      src="../images/refrigerators/refrigerator-image6.png"
+                      alt="fridge"
+                    />
+                  </section>
+                  <p>Frigidaire</p>
+                </td>
+                <td>03/01/2023</td>
+                <td>&dollar;499</td>
+                <td>3 hour</td>
+                <td>Room 3</td>
+                <td>Susan</td>
+              </tr>
+              <tr>
+                <td>
+                  <section class="product-info">
+                    <img
+                      src="../images/refrigerators/refrigerator-image7.png"
+                      alt="fridge"
+                    />
+                  </section>
+                  <p>GE</p>
+                </td>
+                <td>04/01/2023</td>
+                <td>&dollar;659</td>
+                <td>2 hour</td>
+                <td>Room 1</td>
+                <td>Jack</td>
+              </tr>
+              <tr>
+                <td>
+                  <section class="product-info">
+                    <img
+                      src="../images/refrigerators/refrigerator-image8.png"
+                      alt="fridge"
+                    />
+                  </section>
+                  <p>Maytag</p>
+                </td>
+                <td>05/01/2023</td>
+                <td>&dollar;779</td>
+                <td>3 hour</td>
+                <td>Room 2</td>
+                <td>Alex</td>
+              </tr>
+              <tr>
+                <td>
+                  <section class="product-info">
+                    <img
+                      src="../images/refrigerators/refrigerator-image9.png"
+                      alt="fridge"
+                    />
+                  </section>
+                  <p>Samsung</p>
+                </td>
+                <td>06/01/2023</td>
+                <td>&dollar;599</td>
+                <td>1 hour</td>
+                <td>Room 2</td>
+                <td>Susan</td>
+              </tr>
+              <tr>
+                <td>
+                  <section class="product-info">
+                    <img
+                      src="../images/refrigerators/refrigerator-image1.png"
+                      alt="fridge"
+                    />
+                  </section>
+                  <p>Kitchen Aid</p>
+                </td>
+                <td>07/01/2023</td>
+                <td>&dollar;899</td>
+                <td>3 hour</td>
+                <td>Room 1</td>
+                <td>Jack</td>
+              </tr>
+              <tr>
+                <td>
+                  <section class="product-info">
+                    <img
+                      src="../images/refrigerators/refrigerator-image2.png"
+                      alt="fridge"
+                    />
+                  </section>
+                  <p>Samsung</p>
+                </td>
+                <td>08/01/2023</td>
+                <td>&dollar;589</td>
+                <td>2 hour</td>
+                <td>Room 2</td>
+                <td>Alex</td>
+              </tr>
+              <tr>
+                <td>
+                  <section class="product-info">
+                    <img
+                      src="../images/refrigerators/refrigerator-image3.png"
+                      alt="fridge"
+                    />
+                  </section>
+                  <p>Haier</p>
+                </td>
+                <td>09/01/2023</td>
+                <td>&dollar;599</td>
+                <td>2 hour</td>
+                <td>Room 1</td>
+                <td>Susan</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <footer>
+          <div class="icons">
+            <img
+              src="/images/icons/icons8-facebook.svg"
+              alt="fb"
+              height="20"
+              width="20"
+            />
+            <img
+              src="/images/icons/icons8-instagram.svg"
+              alt="fb"
+              height="20"
+              width="20"
+            />
+            <img
+              src="/images/icons/icons8-twitter.svg"
+              alt="fb"
+              height="20"
+              width="20"
+            />
+            <img
+              src="/images/icons/icons8-youtube.svg"
+              alt="fb"
+              height="20"
+              width="20"
+            />
+          </div>
+          <p>Copyright 2099. All Rights Reserved.</p>
+          <p>
+            <a href="mailto:info@mahadev-enterprises.com">
+              Request Information
+            </a>
+          </p>
+          <p>Rohit Sai Pandugolla &nbsp;&nbsp; C0878560</p>
+          <!--Hyperlinks for social media handles can be added-->
+        </footer>
+      </main>
+
+      <!-- The footer contains copyright and contact info regarding the website -->
+    </div>
+  </body>
+</html>

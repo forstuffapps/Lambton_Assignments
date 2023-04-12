@@ -1,0 +1,216 @@
+<!DOCTYPE html5>
+<!-- This website was created by Pandugolla Rohit Sai -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!--adding style sheet to the website-->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="team.css" />
+    <title>Mahadev Enterprises</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../scripts/R_json.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- The header is the area for the website name or logo -->
+      <header>
+        <div class="header-content">
+          <a href="/index.html">
+            <img
+              class="logo"
+              src="../images/mahadev-enterprises-high-resolution-logo-color-on-transparent-background.png"
+              alt="Mahadev Enterprises Logo"
+            />
+          </a>
+          <div class="separator"></div>
+          <!-- The nav area is for hyperlinks to other pages within the same website -->
+          <nav>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../about/about.html">About Us</a></li>
+              <li><a class="selected" href="#">Our Team</a></li>
+              <li><a href="../specials/specials.html">Specials</a></li>
+              <li><a href="../training/training.html">Training</a></li>
+              <li><a href="../media/media.html">Media</a></li>
+              <li><a href="../contact/contact.html">Contact Us</a></li>
+              <li>
+                <select
+                  id="select"
+                  onchange="window.open(this.options[this.selectedIndex].value);"
+                >
+                  <option>Reports</option>
+                  <option value="/report1.html">Products</option>
+                  <option value="/report2.html">Orders</option>
+                  <option value="/report3.html">Order Totals</option>
+                  <option value="/report4.html">Inventory</option>
+                </select>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- The body of the content for a particular page, in this case the home page -->
+      <main>
+        <div class="team-hero">
+          <img src="./team.jpg" alt="team" class="team-img" />
+          <section class="team-hero-text">
+            <h2>Who Are We?</h2>
+            <p>
+              Our team is made up of diverse group of individuals committed to
+              continuous innovation of cutting-edge technology to build and
+              provide top-notch refrigerators for our customers.
+            </p>
+          </section>
+          <section class="our-team-section">
+            <h2>Our Team</h2>
+            <section class="our-team-cards">
+              <article class="member-card">
+                <!--image taken from https://unsplash.com/s/photos/professional-people-->
+                <img
+                  src="../images/person1.jpg"
+                  alt="teammate"
+                  class="member-img"
+                />
+                <section class="member-info">
+                  <p>Sandra Anderson</p>
+                  <small>Chief Executive Officer</small>
+                </section>
+                <button class="member-info-btn">
+                  <img src="./arrow.png" alt="arrow" />
+                </button>
+              </article>
+              <article class="member-card">
+                <!--image taken from https://unsplash.com/s/photos/professional-people-->
+                <img
+                  src="../images/person2.jpg"
+                  alt="teammate"
+                  class="member-img"
+                />
+                <section class="member-info">
+                  <p>Alex Smith</p>
+                  <small>Chief Technology Officer</small>
+                </section>
+                <button class="member-info-btn">
+                  <img src="./arrow.png" alt="arrow" />
+                </button>
+              </article>
+              <article class="member-card">
+                <!--image taken from https://unsplash.com/s/photos/professional-people-->
+                <img
+                  src="../images/person3.jpg"
+                  alt="teammate"
+                  class="member-img"
+                />
+                <section class="member-info">
+                  <p>Richard Brown</p>
+                  <small>Chief Financial Officer</small>
+                </section>
+                <button class="member-info-btn">
+                  <img src="./arrow.png" alt="arrow" />
+                </button>
+              </article>
+              <article class="member-card">
+                <!--image taken from https://unsplash.com/s/photos/professional-people-->
+                <img
+                  src="../images/person4.jpg"
+                  alt="teammate"
+                  class="member-img"
+                />
+                <section class="member-info">
+                  <p>Clarke Carter</p>
+                  <small>Managing Director</small>
+                </section>
+                <button class="member-info-btn">
+                  <img src="./arrow.png" alt="arrow" />
+                </button>
+              </article>
+              <article class="member-card">
+                <!--image taken from https://unsplash.com/s/photos/professional-people-->
+                <img
+                  src="../images/person5.jpg"
+                  alt="teammate"
+                  class="member-img"
+                />
+                <section class="member-info">
+                  <p>Thomas Martin</p>
+                  <small>Senior Vice President</small>
+                </section>
+                <button class="member-info-btn">
+                  <img src="./arrow.png" alt="arrow" />
+                </button>
+              </article>
+              <article class="member-card">
+                <!--image taken from https://unsplash.com/s/photos/professional-people-->
+                <img
+                  src="../images/person6.jpg"
+                  alt="teammate"
+                  class="member-img"
+                />
+                <section class="member-info">
+                  <p>Amelia Kennedy</p>
+                  <small>Senior Technician</small>
+                </section>
+                <button class="member-info-btn">
+                  <img src="./arrow.png" alt="arrow" />
+                </button>
+              </article>
+            </section>
+          </section>
+        </div>
+
+        <h1>REFRIGERATOR Team Details</h1>
+        <div id="R_team"></div>
+
+      </main>
+
+      <!-- The footer contains copyright and contact info regarding the website -->
+      <footer>
+        <div class="icons">
+          <img
+            src="/images/icons/icons8-facebook.svg"
+            alt="fb"
+            height="20"
+            width="20"
+          />
+          <img
+            src="/images/icons/icons8-instagram.svg"
+            alt="fb"
+            height="20"
+            width="20"
+          />
+          <img
+            src="/images/icons/icons8-twitter.svg"
+            alt="fb"
+            height="20"
+            width="20"
+          />
+          <img
+            src="/images/icons/icons8-youtube.svg"
+            alt="fb"
+            height="20"
+            width="20"
+          />
+        </div>
+        <p>Copyright 2099. All Rights Reserved.</p>
+        <p>
+          <a href="mailto:info@mahadev-enterprises.com">
+            Request Information
+          </a>
+        </p>
+        <p>Rohit Sai Pandugolla &nbsp;&nbsp; C0878560</p>
+        <!--Hyperlinks for social media handles can be added-->
+      </footer>
+    </div>
+  </body>
+</html>
