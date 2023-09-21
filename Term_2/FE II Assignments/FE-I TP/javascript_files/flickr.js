@@ -13,10 +13,13 @@ $(document).ready(
     "&tags=" + searchTerm + "&tagmode=all";
     $.getJSON(url, function(data){
     var html = "";
+    
     $.each(data.items, function(i, item){
+    html+= "<div class='result'>";
     html += "<h2>" + item.title + "</h2>";
     html += "<img src=" + item.media.m + ">";
     html += "<p><b>Tags: </b>" + item.tags + "</p>";
+    html+= "</ div>";
     });
     $("#photos").html(html);
     });
