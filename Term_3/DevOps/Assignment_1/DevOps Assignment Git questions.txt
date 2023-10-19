@@ -1,0 +1,65 @@
+Question 01:
+
+Git is a distributed version control system that allows developers to track changes in their code and collaborate with others efficiently. It operates locally on your computer.
+GitHub, on the other hand, is a web-based platform that provides hosting for Git repositories. It offers additional features like collaboration tools, issue tracking, and more.
+The relationship between Git and GitHub is that GitHub uses Git for version control. Developers can use Git locally, and then push their code to GitHub for remote storage and collaboration with others.
+Question 02:
+Three advantages of version control systems (VCS) are:
+
+History and Version Tracking: VCS allows you to track changes made to your code over time, providing a history of modifications, who made them, and when.
+Collaboration: VCS enables multiple team members to work on the same project simultaneously, merging their changes and resolving conflicts efficiently.
+Backup and Recovery: VCS serves as a backup mechanism, ensuring that your code is not lost if something goes wrong. You can always revert to a previous version if needed.
+Question 03:
+Here's a table outlining common Git commands:
+
+Git Command	Description
+clone	Copies a remote Git repository to your local machine.
+add	Stages changes in your working directory for commit.
+commit	Records the staged changes with a descriptive message.
+push	Uploads your local commits to a remote repository.
+pull	Fetches changes from a remote repository and merges them into your local branch.
+Question 04:
+The purpose of branching in Git is to allow developers to work on isolated features or bug fixes without affecting the main codebase. It enables parallel development and experimentation.
+
+Question 05:
+To merge a feature branch into the master branch, you can use the following steps:
+
+Ensure you are on the master branch: git checkout master
+Merge the feature branch into master: git merge feature-branch
+Resolve any merge conflicts if they occur.
+Commit the changes if conflicts were resolved: git commit
+Push the changes to the remote repository: git push
+Question 06:
+A "merge conflict" in Git occurs when two or more branches have made conflicting changes to the same part of a file. For example, if one developer changes a line of code in a file, and another developer changes the same line in a different way, Git can't automatically determine which change to keep.
+
+Question 07:
+To manually resolve a merge conflict in Git:
+
+Open the conflicted file in a text editor.
+Locate the conflict markers (e.g., <<<<<<<, =======, >>>>>>>) that Git inserted.
+Edit the file to keep the desired changes, removing conflict markers.
+Save the file.
+Stage the resolved file using git add.
+Commit the changes with git commit.
+Question 08:
+"Merge" and "rebase" are both used to integrate changes from one branch into another, but they do it differently:
+
+Merge: Combines the changes from the source branch into the target branch, preserving the history of both branches. This creates a new merge commit.
+Rebase: Moves or reapplies the changes from the source branch onto the tip of the target branch. It results in a linear, cleaner history but can rewrite commit history.
+Question 09:
+A "pull request" (PR) is a feature in GitHub that allows you to propose changes to a repository. To use a pull request to submit changes from a feature branch:
+
+Create a new branch for your feature.
+Make your changes and commit them.
+Push the feature branch to GitHub.
+Create a pull request from the feature branch to the master branch.
+Reviewers can comment, review, and suggest changes.
+Once the PR is approved, it can be merged into the master branch.
+Question 10:
+In Git, a "commit" is a snapshot of the changes you have made to your code at a particular point in time. Each commit has a unique identifier (hash) and a commit message describing the changes made.
+
+Question 11:
+GitHub Actions are automated workflows that you can set up in your GitHub repository to perform tasks such as building, testing, and deploying your code. They are defined in YAML files and are triggered by various events, such as pushes to the repository. GitHub Actions help automate and streamline the software development process.
+
+Question 12:
+CI/CD stands for "Continuous Integration" and "Continuous Deployment." It is a set of practices and tools used in software development to automate the building, testing, and deployment of code changes. CI/CD pipelines help ensure that code changes are integrated and deployed quickly, reliably, and with minimal manual intervention.
