@@ -1,8 +1,0 @@
-E:\Lambton Study\C# Assignments\C0869346_Assignment01\Q2\bin\Debug\Q2.exe.config
-E:\Lambton Study\C# Assignments\C0869346_Assignment01\Q2\bin\Debug\Q2.exe
-E:\Lambton Study\C# Assignments\C0869346_Assignment01\Q2\bin\Debug\Q2.pdb
-E:\Lambton Study\C# Assignments\C0869346_Assignment01\Q2\obj\Debug\Q2.csproj.AssemblyReference.cache
-E:\Lambton Study\C# Assignments\C0869346_Assignment01\Q2\obj\Debug\Q2.csproj.SuggestedBindingRedirects.cache
-E:\Lambton Study\C# Assignments\C0869346_Assignment01\Q2\obj\Debug\Q2.csproj.CoreCompileInputs.cache
-E:\Lambton Study\C# Assignments\C0869346_Assignment01\Q2\obj\Debug\Q2.exe
-E:\Lambton Study\C# Assignments\C0869346_Assignment01\Q2\obj\Debug\Q2.pdb
